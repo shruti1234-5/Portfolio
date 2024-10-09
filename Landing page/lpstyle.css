@@ -1,0 +1,246 @@
+body {
+    margin:0px;
+    padding:0px;
+    background-color: rgb(248, 244, 238);
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-image: url("institute.jpg");
+    height: 500px;
+    width: 100vw;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+     margin-bottom: 50px;
+    }
+li{
+    list-style-type: none;
+    display : inline;
+    padding: 1px;
+    margin-left: 44px;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:rgb(83, 83, 165);
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+nav{
+    background-color: blanchedalmond;
+    width:100vw;
+    margin: 0px;
+    padding: 3px 0px 3px 0px;
+}
+.heading{
+    padding: 80px;
+    padding-left: 50px;
+    margin-left: 30px;
+}
+.heading h1{
+     line-height: 8px;  
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: plum;
+    font-family: "Playfair Display", serif;
+}
+.heading h3{
+   font-size: 35px;
+  margin: auto;
+   color: white;
+   font-family: "Playfair Display", serif;
+}
+.heading h5{  
+    margin: auto;
+    padding-top: 8px;
+   font-size: 25px;
+   color:  white;
+   font-family: "Playfair Display", serif;
+}
+#about h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color:chocolate;
+    text-decoration-line: underline;
+}
+#about p{
+    font-size: 20px;
+    width: 800px;
+}
+#about div {
+       display:flex;
+       flex-direction: row;
+       justify-content: center;
+       gap: 70px;
+}
+#services{
+    width:100vw;
+    margin: 70px auto 0px auto;
+}
+#services h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color:chocolate;
+    text-decoration-line: underline;
+}
+.courses{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    height: 350px;   
+}
+.develop,.design,.promote{
+      width:300px;
+}
+ #services ul{
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#services h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 29px;
+    color:blueviolet;
+    font-family: "Playfair Display", serif;
+} 
+#services ul li{
+    text-align: center;
+    margin: auto;
+    font-weight: 300;
+    font-family: "Merriweather", serif;
+    color:black;
+}
+#branches{
+    margin-bottom: 100px;
+    margin-top: 0px;
+}
+#branches h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color:chocolate;
+    text-decoration-line: underline;
+}
+.sub-branch{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 40px;
+   height: 300px; 
+  
+}
+.sub-branch-1{
+      align-items: center;
+} 
+.sub-branch-2{
+    align-items: center;   
+}
+.sub-branch h3{
+    font-size:30px;
+    text-align: center;
+    color:rgb(238, 132, 2);
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+}
+#contact h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    text-decoration-line: underline;
+}
+#contact {
+    position: relative;
+    background: url("contact.jpg") no-repeat center center/cover;
+}
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form {
+    width: 40%;
+}
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    border-radius: 10px;
+    cursor: pointer
+}
+.center{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+     color: white;
+    background-color: rgb(7, 7, 121);
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff7f50;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+    color: #fff;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.form-group::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}

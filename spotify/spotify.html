@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="section-1">
+
+            <img src="spotify.png" alt="logo" width=35px height=38px>
+            <p class="spotify">Spotify</p>
+            <div class="navbar">
+                <div class="nav"> <img src="images.png" width=30px height=26px><a href="#" id="home">Home</a> </div><br>
+                <div class="nav"> <img src="images (1).png" width=30px height=30px><a href="#" id="search">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <h3>Your Library </h3>
+                <h3><span>&plus;</span></h3>
+                <div class="plus">Create your playlist</div>
+            </div>
+            <button class="btn"><img width=16px height=20px src="lang.jpg"> English</button>
+            <div class="lang">
+                <div class="header">
+                    <div>
+                        <h2>Choose a language </h2>
+                    </div>
+                    <div class="cross"><span class="close">&times;</span></div>
+                </div>
+                <h4>This updates what you read on open.spotify.com</h4>
+                <hr>
+                <div class="lang-contain">
+                    <div class="language" id="English"><span lang="en">English</span></div>
+                    <div class="language" id="Afrikaans"><span lang="af">Afrikaansch</span></div>
+                    <div class="language" id="Amharic"><span lang="am">amarəñña</span></div>
+                    <div class="language" id="Arabic"><span lang="ar">العربية</span></div>
+                    <div class="language" id="Bulgarian"><span lang="bg">български език</span></div>
+                    <div class="language" id="Bihari"><span lang="bh">ਬਿਹਾਰੀ</span></div>
+                    <div class="language" id="Bengali"><span lang="bn">বাংলা</span></div>
+                    <div class="language" id="Danish"><span lang="da">dansk</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-2">
+            <div class="sec2">
+                <div class="grid1"><img class="playbtn" src="4028535.png" width="50px" height="40px">
+                <button onclick="downloads()">Downloads</button>
+                    <a href="Signup.html"><button>Signup</button></a>
+                    <a href="Login.html"> <button>Log in</button></a>
+                </div>
+                <div class="grid2">
+                    <h2>Popular artists</h2>
+                    <h4>Show All</h4>
+                </div>
+                <div class="grid3">
+                    <div class="play" id="pritam"><img src="94419453.jpg" width="165px" height="165px">
+                        <img class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play Pritam</div>
+                        <p>Pritam</p>
+                    </div>
+                    <div class="play" id="arijit"><img src="e8d09dc7491d9801c8edb409a40186c7.jpg" width="165px"
+                            height="165px"><img class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play Arijit Singh</div>
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="play" id="rahmaan"><img src="640px-AR_Rahman_At_The_‘Marvel_Anthem’_Launch.jpg"
+                            width="165px" height="165px"><img class="playbtn" src="4028535.png" width="50px"
+                            height="40px">
+                        <div class="hover">Play A.R.Rahman </div>
+                        <p>A.R.Rahman</p>
+                    </div>
+                    <div class="play" id="ravi"><img src="xmNR2I1p_200x200.jpg" width="165px" height="165px"><img
+                            class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play Anirudh Ravichander</div>
+                        <p>Anirudh Ravichander</p>
+                    </div>
+                    <div class="play" id="vishal"><img src="download.jfif" width="165px" height="165px"><img
+                            class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play Vishal Mishra</div>
+                        <p>Vishal Mishra</p>
+                    </div>
+                </div>
+                <div class="grid4">
+                    <h2>Popular albums</h2>
+                    <h4>Show All</h4>
+                </div>
+                <div class="grid5">
+                    <div class="play artist" onclick="display('2303e8f9f55efcc1fe2391e6091c4882.1000x1000x1.jpg')">
+                        <img class="song" src="2303e8f9f55efcc1fe2391e6091c4882.1000x1000x1.jpg" alt="a" width="180px"
+                            height="200px" >
+                        <img class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play Ek Tha Raja<br> by Badshah</div>
+                        <p>Ek Tha Raja<br><span>Badshah</span></p>
+                    </div>
+                    <div class="play artist" onclick="display('100901256.jpg')">
+                        <img class="song" src="100901256.jpg" width="180px" height="200px">
+                        <img class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play ANIMAL by Manan Bhardwaj,Jaani</div>
+                        <p>ANIMAL<br><span>Manan Bhardwaj,Jaani</span></p>
+                    </div>
+                    <div class="play artist" onclick="display('Aavesham.jpg')">
+                        <img class="song" src="Aavesham.jpg" width="180px" height="200px">
+                        <img class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play Aavesham by Jithu Madhavan</div>
+                        <p>Aavesham<br><span>Jithu Madhavan</span></p>
+                    </div>
+                    <div class="play artist" onclick="display('il_fullxfull.4404926379_vo3q.jpg')">
+                        <img class="song" src="il_fullxfull.4404926379_vo3q.jpg" width="180px" height="200px" alt="d">
+                        <img class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play Moosetape by Sidhu Moose Wala</div>
+                        <p>Moosetape<br><span>Sidhu Moose Wala</span></p>
+                    </div>
+                    <div class="play artist" onclick="display('download (1).jfif')">
+                        <img class="song" src="download (1).jfif" width="180px" height="200px">
+                        <img class="playbtn" src="4028535.png" width="50px" height="40px">
+                        <div class="hover">Play Rocky aur<br> Rani by Jonita<br> Gandhi</div>
+                        <p>Rocky aur Rani<br><span>Jonita Gandhi</span></p>
+                    </div>
+                </div>
+                <div class="grid6">
+                    <div class="flex1">
+                        <h2>Company</h2>
+
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+
+                    </div>
+                    <div class="flex2">
+                        <h2>Communities</h2>
+
+                        <li>For Artists</li>
+                        <li>Developers</li>
+                        <li>Advertising</li>
+                        <li>Investors</li>
+                        <li>Vendors</li>
+
+                    </div>
+
+                    <div class="flex3">
+                        <h2>Useful links</h2>
+
+                        <li>Support</li>
+                        <li>Free Mobile App</li>
+
+                    </div>
+
+                    <div class="flex4">
+                        <h2>Spotify Plans</h2>
+
+                        <li>Premium Individual</li>
+                        <li>Premium Duo</li>
+                        <li>Premium Family</li>
+                        <li>Premium Student</li>
+                        <li>Spotify Free</li>
+                    </div>
+
+                </div>
+                <div class="grid7">
+                    <p>&copy; 2024 Spotify AB</p>
+                </div>
+            </div>
+        </div>
+</div>
+    <div class="hide">
+        <div class="grid1"><img class="playbtn" src="4028535.png" width="50px" height="40px">
+            <form>
+                <input type="text" placeholder="What do you want to play?">
+            </form>
+            <button>Signup</button>
+            <button>Log in</button>
+        </div>
+        <div class="g2">
+            <h2 class="h2">Browse All</h2>
+        </div>
+        <div class="grid-3">
+            <div class="div" id="div1">Music</div>
+            <div class="div" id="div2">Podcasts</div>
+            <div class="div" id="div3">Live Events</div>
+            <div class="div" id="div4">Made For You</div>
+            <div class="div" id="div5">New Releases</div>
+            <div class="div" id="div6">Hindi</div>
+        </div>
+        <div class="grid6">
+            <div class="flex1">
+                <h2>Company</h2>
+
+                <li>About</li>
+                <li>Jobs</li>
+                <li>For the Record</li>
+
+            </div>
+            <div class="flex2">
+                <h2>Communities</h2>
+
+                <li>For Artists</li>
+                <li>Developers</li>
+                <li>Advertising</li>
+                <li>Investors</li>
+                <li>Vendors</li>
+
+            </div>
+
+            <div class="flex3">
+                <h2>Useful links</h2>
+
+                <li>Support</li>
+                <li>Free Mobile App</li>
+
+            </div>
+
+            <div class="flex4">
+                <h2>Spotify Plans</h2>
+
+                <li>Premium Individual</li>
+                <li>Premium Duo</li>
+                <li>Premium Family</li>
+                <li>Premium Student</li>
+                <li>Spotify Free</li>
+            </div>
+
+        </div>
+        <div class="grid7">
+            <p>&copy; 2024 Spotify AB</p>
+        </div>
+    </div>
+    <div class="pop-album">
+        <img class="album-image" src="" width="200px" height="300px">
+        <div class="content">
+            <h1>Start listening with a free Spotify account</h1>
+            <button class="next"><a href="Signup.html">Sign up free</a></button><br>
+            <!-- <button class=" download">Download App</button> -->
+            <p>Already have an account?<a href="Login.html" class="login">Log in</a></p>
+
+        </div>
+        <button class="close-album">Close</button>
+    </div>
+    <div class="pop-artist-1">
+        <div class="g1">
+            <button class="close-artist">&times;</button>
+            <h1>Pritam</h1>
+            <h5>38,196,068 monthly listeners</h5>
+        </div>
+        <div class="g2">
+            <img src="4028535.png" width="50px" height="40px">
+            <button>Follow</button>
+        </div>
+        <div class="g3"> Popular </div>
+        <div class="g4">
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td class="td">O Maahi </td>
+                    <td>160,163,315</td>
+                    <td>3:53</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="td">Tum Kya Mile</td>
+                    <td>185,217,652</td>
+                    <td>4:37</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="td">Kesariya</td>
+                    <td>543,113,588</td>
+                    <td>3:25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="td">Tum se hi</td>
+                    <td>875,56,353</td>
+                    <td>3:23</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="td">Ve Kamleya</td>
+                    <td>367,987,988</td>
+                    <td>3:40</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="td">Lehra Do</td>
+                    <td>113,588,322</td>
+                    <td>4:25</td>
+                </tr>
+            </table>
+        </div>
+        <div class="g5">
+            <h2>About</h2>
+            <div>
+                <img src="94419453.jpg" width="165px" height="165px">
+                <button><span>#92</span>in the world</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-artist-2">
+        <div class="g1">
+            <button class="close-artist">&times;</button>
+            <h1>Arijit Singh</h1>
+            <h5>40,817,069 monthly listeners</h5>
+        </div>
+        <div class="g2">
+            <img src="4028535.png" width="50px" height="40px">
+            <button>Follow</button>
+        </div>
+        <div class="g3"> Popular </div>
+        <div class="g4">
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td class="td">O Maahi </td>
+                    <td>160,163,315</td>
+                    <td>3:53</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="td">Rait Zara Si</td>
+                    <td>185,217,652</td>
+                    <td>4:37</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="td">Hamari Adhuri Kahani</td>
+                    <td>543,113,588</td>
+                    <td>3:25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="td">Desh Mere</td>
+                    <td>875,56,353</td>
+                    <td>3:23</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="td">Sajni</td>
+                    <td>367,987,988</td>
+                    <td>3:40</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="td">Lutt Putt Gaya</td>
+                    <td>113,588,322</td>
+                    <td>4:25</td>
+                </tr>
+            </table>
+        </div>
+        <div class="g5">
+            <h2>About</h2>
+            <div>
+                <img src="e8d09dc7491d9801c8edb409a40186c7.jpg" width="165px" height="165px">
+                <button><span>#79</span>in the world</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-artist-3">
+        <div class="g1">
+            <button class="close-artist">&times;</button>
+            <h1>A.R.Rahmaan</h1>
+            <h5>36,630,068 monthly listeners</h5>
+        </div>
+        <div class="g2">
+            <img src="4028535.png" width="50px" height="40px">
+            <button>Follow</button>
+        </div>
+        <div class="g3"> Popular </div>
+        <div class="g4">
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td class="td">Rait Zara Si </td>
+                    <td>160,163,315</td>
+                    <td>3:53</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="td">Agar Tum Saath Ho</td>
+                    <td>185,217,652</td>
+                    <td>4:37</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="td">Maa Tujhe Salaam</td>
+                    <td>543,113,588</td>
+                    <td>3:25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="td">Raanjhanaa</td>
+                    <td>875,56,353</td>
+                    <td>3:23</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="td">Kun Faya Kun</td>
+                    <td>367,987,988</td>
+                    <td>3:40</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="td">Roja</td>
+                    <td>113,588,322</td>
+                    <td>4:25</td>
+                </tr>
+            </table>
+        </div>
+        <div class="g5">
+            <h2>About</h2>
+            <div>
+                <img src="640px-AR_Rahman_At_The_‘Marvel_Anthem’_Launch.jpg" width="165px" height="165px">
+                <button><span>#104</span>in the world</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-artist-4">
+        <div class="g1">
+            <button class="close-artist">&times;</button>
+            <h1>Anirudh Ravichander</h1>
+            <h5>22,381,037 monthly listeners</h5>
+        </div>
+        <div class="g2">
+            <img src="4028535.png" width="50px" height="40px">
+            <button>Follow</button>
+        </div>
+        <div class="g3"> Popular </div>
+        <div class="g4">
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td class="td">Chaleya </td>
+                    <td>160,163,315</td>
+                    <td>3:53</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="td">Hukum</td>
+                    <td>185,217,652</td>
+                    <td>4:37</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="td">Psycho Saiyaan</td>
+                    <td>543,113,588</td>
+                    <td>3:25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="td">Hayyoda</td>
+                    <td>875,56,353</td>
+                    <td>3:23</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="td">Naa Ready</td>
+                    <td>367,987,988</td>
+                    <td>3:40</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="td">JD Intro</td>
+                    <td>113,588,322</td>
+                    <td>4:25</td>
+                </tr>
+            </table>
+        </div>
+        <div class="g5">
+            <h2>About</h2>
+            <div>
+                <img src="xmNR2I1p_200x200.jpg" width="165px" height="165px">
+                <button><span>#311</span>in the world</button>
+            </div>
+        </div>
+    </div>
+    <div class="pop-artist-5">
+        <div class="g1">
+            <button class="close-artist">&times;</button>
+            <h1>Vishal Mishra</h1>
+            <h5>22,728,590 monthly listeners</h5>
+        </div>
+        <div class="g2">
+            <img src="4028535.png" width="50px" height="40px">
+            <button>Follow</button>
+        </div>
+        <div class="g3"> Popular </div>
+        <div class="g4">
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td class="td">Pehle Bhi Main </td>
+                    <td>160,163,315</td>
+                    <td>3:53</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="td">Jaanam</td>
+                    <td>185,217,652</td>
+                    <td>4:37</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="td">Khoobsurat</td>
+                    <td>543,113,588</td>
+                    <td>3:25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="td">Jaanam</td>
+                    <td>875,56,353</td>
+                    <td>3:23</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="td">Kaise Hua</td>
+                    <td>367,987,988</td>
+                    <td>3:40</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="td">Chal Tere Ishq Mein</td>
+                    <td>113,588,322</td>
+                    <td>4:25</td>
+                </tr>
+            </table>
+        </div>
+        <div class="g5">
+            <h2>About</h2>
+            <div>
+                <img src="download.jfif" width="165px" height="165px">
+                <button><span>#299</span>in the world</button>
+            </div>
+        </div>
+    </div>
+    <div class="playlist">
+        <h1>Downloads</h1>
+        <audio class="song1"><source src = "soulmate.mp3"> </audio>
+        <audio class="song2"><source src = "Papa Meri Jaan.mp3">   </audio>
+        <audio class="song3"><source src = "Aavesham.mp3">   </audio>
+        <audio class="song4"><source src = "Moosetape.mp3">   </audio>
+        <audio class="song5"><source src = "What Jhumka.mp3"></audio>
+       <div> <button ondblclick="pause1()" onclick  ="soul()">Play Soulmate</button></div>
+       <div> <button ondblclick="pause2()" onclick ="papa()">Play Papa Meri Jaan </button></div>
+       <div> <button ondblclick="pause3()" onclick ="aavesham()">Play Aavesham</button></div>
+       <div> <button ondblclick="pause4()" onclick ="moose()">Play Moosetape</button></div>
+       <div> <button ondblclick="pause5()" onclick ="jhumka()">Play What Jhumka</button></div>
+       <button class="back">Back</button>
+       </div>
+    <script src="style.js"></script>
+</body>
+
+</html>

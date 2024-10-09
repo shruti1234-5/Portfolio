@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Spotify</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+        }
+
+        .container {
+            width: 30%;
+            margin: auto;
+
+        }
+
+        .container>div {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        div>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 50px;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 9px;
+            color: white;
+            background-color: black;
+            border-radius: 40px;
+            border: 1px solid gray;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            height: auto;
+        }
+        .btn:hover{
+            border: 2px solid white;
+        }
+
+        #btn {
+            margin-top: 20px;
+        }
+
+        .btn img {
+            border-radius: 50%;
+        }
+         #phone{
+            padding-right: 70px;
+            margin-bottom: 30px;
+         }
+         label {
+            color: white;
+            text-align: start;
+            font-size: 20px;
+        }
+
+        input[type="email"] , input[type="password"]{
+            color: white;
+            padding: 6px;
+            border: 1px solid white;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            width: 100%;
+        }
+        .next {
+            width: 100%;
+            padding: 9px;
+            color: rgba(0, 0, 0, 0.999);
+            background-color: rgb(97, 218, 97);
+            border-radius: 40px;
+            border: 1px solid;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .next:hover{
+            border: 3px solid  rgb(97, 218, 97);
+            padding: 10px;
+            font-size: 16px ;
+        }
+        p {
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            margin: 15px;
+        }
+
+        .login {
+            color:  white;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div><img src="spotify.png" alt="logo" width=55px height=58px></div>
+        <h1>Log in to Spotify</h1>
+        <br>
+        <button class="btn" id="btn"><img src="google.jfif" width=30px
+            height=26px>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue with
+        Google</button>
+    <button class="btn"><img src="facebook.jpg" width=30px
+            height=26px>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue with Facebook</button>
+    <button class="btn"><img src="apple.jpg" width=30px
+            height=26px>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continue with Apple</button>
+            <button class="btn"id="phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Continue with phone number</button>
+    <hr style="margin-bottom: 30px;">
+
+    <form>
+        <label for="email">Email or username</label><br>
+        <input type="email" name="email" placeholder="Email or Username"required>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" placeholder="Password"required>
+        <button class="next">Log in</button>
+    </form>
+   
+    <p><a href="" class="login">Forgot your password?</a></p>
+    <p>Don't have an account? <a href="Signup.html" class="login">Sign up for Spotify.</a></p>
+        </div>
+</body>
+</html>
