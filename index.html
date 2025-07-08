@@ -8,136 +8,148 @@
     <link rel="icon" href="icon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet" /> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 
 <body>
-    <header>
-        <h1>This is Shruti, <span class="about-me"></span></h1>
-        <img src="shruti.jpg" alt="Shruti pic" width="190" height="220" />
-        <div><button class="btn"><a href="Resume.pdf" target="_blank" download>My Resume</a></button></div>
+    <header class="mb-4 py-4 shadow-lg rounded-bottom animate__animated animate__fadeInDown">
+        <h1 class="display-5 fw-bold mb-4">This is Shruti, <span class="about-me"></span></h1>
+        <img src="img/shruti.jpg" alt="Shruti pic" width="190" height="220" class="img-thumbnail shadow-lg mb-3 transition-transform mt-2" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'"/>
+        <div><button class="btn btn-outline-light btn-lg shadow-sm mt-2"><a href="Resume.pdf" target="_blank" download class="text-decoration-none text-dark">My Resume</a></button></div>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I'm a passionate and dedicated full-stack developer with experience in building real-world web applications
-            using the MERN stack (MongoDB, Express.js, React.js, Node.js).I have gained practical, hands-on experience
-            through a software development internship, where I contributed to full-stack projects and tackled real-world
+    <section class="mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+        <h2 class="mb-3">About Me</h2>
+        <p class="lead">
+            I'm a passionate and dedicated <b>Full-Stack Developer</b> with experience in building real-world web applications
+            using the <b> MERN stack </b>(MongoDB, Express.js, React.js, Node.js).I am gaining practical, hands-on experience
+            through a Software Engineer job , where I contribute to full-stack projects and tackle real-world
             development challenges. My
-            key projects include a student admission portal, a real-time chat application (ChatBridge), and a Hotel
-            Booking Website.
-            I'm always eager to learn new technologies and contribute to
+            key projects include <b>A Student Admission Portal, a real-time chat application (ChatBridge), a Student Academics and Exam Portal and a Hotel
+            Booking Website.</b> These projects showcase my ability to design and implement
+            user-friendly interfaces, manage databases, and create efficient server-side logic. I have a strong
+            understanding of software development principles and best practices. I'm always eager to learn new technologies and contribute to
             impactful development teams.
         </p>
     </section>
-    <hr>
-    <section id="programming-lang">
-        <h2>Programming Languages</h2>
-        <div class="skill">
-            <p>HTML</p>
-            <div class="progress-bar" data-progress="90"></div>
-        </div>
-        <div class="skill">
-            <p>CSS</p>
-            <div class="progress-bar" data-progress="80"></div>
-        </div>
-        <div class="skill">
-            <p>JS</p>
-            <div class="progress-bar" data-progress="60"></div>
-        </div>
-        <div class="skill">
-            <p>React</p>
-            <div class="progress-bar" data-progress="58"></div>
+    <div class="d-flex justify-content-center my-4">
+        <hr class="w-50 border-2 border-dark opacity-100 m-0" />
+    </div>
+    <section id="programming-lang" class="mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+        <h2 class="mb-3">My Skills</h2>
+        <!-- Skill progress bars can be added here -->
+    </section>
+    <section class="horizontal-scroll mb-4 animate__animated animate__fadeInUp animate__delay-3s">
+        <div class="icon-container gap-3">
+            <img src="img/html.jpg" alt="HTML" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/css.jfif" alt="CSS" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/js.png" alt="JS" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/react.png" alt="React" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/java.png" alt="java" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/python.png" alt="Python" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/bootstrap.jfif" alt="Bootstrap" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/jsicon.png" alt="nodejs" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/express.jpg" alt="expressjs" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/mongodb.png" alt="mongodb" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="img/tailwind.png" alt="tailwind" class="img-fluid shadow-sm transition-transform" style="transition: transform 0.4s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
         </div>
     </section>
-    <section class="horizontal-scroll">
-        <div class="icon-container">
-            <img src="html.jpg" alt="HTML">
-            <img src="css.jfif" alt="CSS">
-            <img src="js.png" alt="JS">
-            <img src="react.png" alt="React">
-            <img src="java.png" alt="java">
-            <img src="python.png" alt="Python">
-            <img src="bootstrap.jfif" alt="Bootstrap">
-            <img src="jsicon.png" alt="expressjs">
-            <img src="mongodb.png" alt="mongodb">
-
-
-        </div>
-    </section>
-    <hr>
+    <div class="d-flex justify-content-center my-4">
+        <hr class="w-50 border-2 border-dark opacity-100 m-0" />
+    </div>
     <section>
-        <h2>My Projects</h2>
-        <p>Take a look at some of my works</p>
-        <section id="projects">
-            <div class="project-thumbnail">
-                <div class="thumbnail-content">
-                    <img src="spotify/spotify.png" alt="">
-                    <h3>Spotify Clone</h3>
-                    <a href="spotify/spotify.html" class="project-btn" target="_blank">View Project</a>
-                </div>
+    <h2 class="mb-3">My Projects</h2>
+    <p class="mb-4">Take a look at some of my works</p>
+    <div class="container my-4">
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">ChatBridge</h5>
+              <p class="card-text">Real-time Chat Application</p>
+              <a href="https://chat-bridge-phi.vercel.app/" target="_blank" class="btn btn-primary btn-lg mt-2">Live Demo</a>
             </div>
-            <div class="project-thumbnail">
-                <div class="thumbnail-content">
-                    <img src="Landing page/institute.jpg" alt="">
-                    <h3>Landing Page</h3>
-                    <p>Saraswati Trainers</p>
-                    <a href="Landing page/landingpage.html" class="project-btn" target="_blank">View Project</a>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">InrollNow</h5>
+              <p class="card-text">Student Admission Portal</p>
+              <a href="https://inroll-now.vercel.app" target="_blank" class="btn btn-primary btn-lg mt-2">Live Demo</a>
             </div>
-            <div class="project-thumbnail">
-                <div class="thumbnail-content">
-                    <img src="Food order/logo.png" alt="">
-                    <h3>Food Order Website</h3>
-                    <p>My Online Meal</p>
-                    <a href="Food order/index.html" class="project-btn" target="_blank">View Project</a>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Phoenicia</h5>
+              <p class="card-text">Hotel Landing Page</p>
+              <a href="https://phoenicia-six.vercel.app/" target="_blank" class="btn btn-primary btn-lg mt-2">Live Demo</a>
             </div>
-        </section>
-    </section>
-    <hr>
-    <section>
-        <h2>Contact Me</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Name : </label>
-                <input type="text" name="name" placeholder="Your name" required />
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+    <div class="d-flex justify-content-center my-4">
+        <hr class="w-50 border-2 border-dark opacity-100 m-0" />
+    </div>
+    <section class="animate__animated animate__fadeInUp animate__delay-4s">
+        <h2 class="mb-3">Contact Me</h2>
+        <form class="p-4 rounded shadow-lg bg-light animate__animated animate__fadeIn animate__delay-5s">
+            <div class="form-group mb-3 text-start">
+                <label for="name" class="form-label">Name : </label>
+                <input type="text" name="name" placeholder="Your name" required class="form-control" />
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Your email" required />
+            <div class="form-group mb-3 text-start">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" placeholder="Your email" required class="form-control" />
             </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" placeholder="Your message" required></textarea>
+            <div class="form-group mb-3 text-start">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" placeholder="Your message" required class="form-control"></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
         </form>
     </section>
-    <hr>
-    <section>
-        <h2>Contact Information</h2>
-        <p>Let's Connect</p>
-        <a href="mailto:shrutisharma620425@gmail.com" class="icon-link email-icon">
-            <i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/shruti-sharma-7292a3268" class="icon-link linkedin-icon">
-            <i class="fa-brands fa-linkedin"></i></a>
-        </p>
-    </section>
-
-    <footer>
-        <p>Copyright &copy; | Shruti Developer</p>
+    <div class="d-flex justify-content-center my-4">
+        <hr class="w-50 border-2 border-dark opacity-100 m-0" />
+    </div>
+    <section class="mb-4 animate__animated animate__fadeInUp animate__delay-6s">
+    <h2 class="mb-3">Contact Information</h2>
+    <p class="mb-3">Let's Connect</p>
+    <div class="d-flex justify-content-center gap-3">
+        <a href="mailto:shrutisharma620425@gmail.com" class="icon-link email-icon shadow-lg transition-transform" target="_blank" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shruti-sharma-7292a3268" class="icon-link linkedin-icon shadow-lg transition-transform" target="_blank" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/shruti1234-5" class="icon-link github-icon shadow-lg transition-transform" target="_blank" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</section>
+    <footer class="mt-4 py-3 bg-gradient bg-dark text-white text-center animate__animated animate__fadeInUp animate__delay-7s">
+        <p class="mb-0">Copyright &copy; | Shruti Developer</p>
     </footer>
-    <div class="dark-mode-toggle" id="dark-mode-toggle">
+    <div class="dark-mode-toggle position-fixed bottom-0 end-0 m-4 bg-light rounded-circle shadow-lg p-3 animate__animated animate__fadeIn animate__delay-8s" id="dark-mode-toggle" style="cursor:pointer; z-index: 999;">
         <i class="fas fa-moon"></i>
     </div>
+    <!-- Bootstrap Bundle JS for Carousel functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

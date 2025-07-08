@@ -1,17 +1,18 @@
 body{
     font-family: 'Poppins',sans-serif;
-    background-color:rgb(253, 241, 229);
-     color: #333;
-     line-height: 1.4;
-     margin: 0;
-     padding: 0;
-     overflow-x: hidden;
+    background-color: #f7eafd; /* very light lavender to match header gradient */
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
-hr{
+hr {
     width: 50%;
-    margin: 20px auto;
-    border-top: 1px solid black;
+    margin: 30px auto;
+    border-top: 2px solid black;
 }
+
 h1,h2{
     font-weight: 700;
     text-decoration: underline;
@@ -19,11 +20,14 @@ h1,h2{
 a{
     text-decoration: none;
 } 
-.fas, .fa-brands{
+.fas, .fa-brands, .fab {
     margin-right: 1px;
     color: inherit;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
-.icon-link{ 
+.icon-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +37,10 @@ a{
     margin: 0px 10px;
     color: #fff;
     font-size: 24px;
-    transition: transform 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 .email-icon{
     background-color: #dd4b39;
@@ -41,6 +48,10 @@ a{
 .linkedin-icon{
     background-color: #8e76aB;
 }
+.github-icon {
+    background-color: #24292e;
+}
+
 
 header,footer{
     background: linear-gradient(to right, #831bcd, #f9620b);
@@ -80,7 +91,7 @@ header a{
     padding: 10px 15px;
     border-radius: 15px;
     box-shadow: 0px 3px 4px rgba(0,0,0,0.2);
-    animation: bounce 1s infinite alternate;
+    /* animation: bounce 1s infinite alternate; */
     border: none;
     font-size: 15px;
 }
@@ -133,7 +144,7 @@ form button:hover{
 }
     .icon-container{
         display: flex;
-        animation: scrollAnimation 5s linear infinite;
+        animation: scrollAnimation 10s linear infinite;
         width: max-content;
 }
 .icon-container img{
@@ -283,3 +294,68 @@ form button:hover{
     }
 }
 
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.custom-carousel-control .carousel-control-prev-icon,
+.custom-carousel-control .carousel-control-next-icon {
+    background-color: #333 !important;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border: 2px solid #fff;
+    opacity: 1 !important;
+}
+
+.card {
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), background 0.3s, color 0.3s;
+    background: #fff;
+    color: #222;
+    box-shadow: 10px 8px 32px rgba(131,27,205,0.18), 0 2px 12px rgba(0,0,0,0.12);
+}
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 10px 36px 48px rgba(131,27,205,0.25), 0 4px 24px rgba(0,0,0,0.18);
+    z-index: 2;
+}
+.dark-mode .card {
+    background: #23212b;
+    color: #f7eafd;
+    border: 1px solid #3a3750;
+}
+
+.dark-mode-toggle {
+    background: #fff !important;
+    border: 2px solid #831bcd !important;
+    color: #831bcd !important;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+.dark-mode .dark-mode-toggle {
+    background: #23212b !important;
+    border: 2px solid #f9620b !important;
+    color: #f9620b !important;
+}
+.dark-mode .btn,
+.dark-mode .btn-primary {
+    color: #fff !important;
+    background-color: #f9620b !important;
+    border-color: #f9620b !important;
+}
+.dark-mode .btn-primary:hover, .dark-mode .btn:hover {
+    background-color: #831bcd !important;
+    border-color: #831bcd !important;
+    color: #fff !important;
+}

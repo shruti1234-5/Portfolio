@@ -1,6 +1,6 @@
 function changeText(){
     // const aboutmeText = ["Web Developer","defg","efhuor"]
-    const aboutmeText = "Web Developer"
+    const aboutmeText = "MERN Stack Developer"
     const typingSpeed = 100;
     const eraseSpeed = 50;
     const pauseTime = 1500;
